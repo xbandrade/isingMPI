@@ -1,0 +1,23 @@
+-----MODELO DE ISING 2D - HPC2-----
+
+'make' para executar o makefile;
+
+'mpirun -np XX ./ising.x' para rodar o programa em paralelo, XX = número máximo de processos
+    OBS.: Para este programa, é interessante que XX seja divisor de 48 para melhores resultados;
+
+'make clean' para excluir todos os arquivos de saída e o programa executável;
+
+Parâmetros definidos no arquivo 'define.h';
+
+Definição das funções no arquivo 'isingfunc.c'.
+
+
+-----OUTPUT FILES-----
+
+'spinsIni.dat' e 'spinsFinal.dat' mostram configuração inicial e final dos spins;
+
+'latticeEvo.dat' mostra a evolução da configuração de spins a cada passo;
+
+'propsFinal.dat' mostra as propriedades magnéticas do sistema para cada temperatura;
+
+'time.dat' mostra o tempo de execução do programa.
